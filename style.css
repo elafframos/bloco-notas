@@ -65,17 +65,13 @@ main{
     display: block;
 }
 
-section{
-    display: block;
-    text-align: center;
-    border-radius: 8px;
-    margin-top: 80px;
-    background: whitesmoke;
-    color: black;
+section {
     width: 20%;
-    height: 100%;
+    margin: 80px auto 0 auto; /* top auto bottom auto */
     padding: 20px;
-    margin-left: 37%;
+    border-radius: 8px;
+    text-align: center;
+    background: whitesmoke;
 }
 
 .texto-nota{
