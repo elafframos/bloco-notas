@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --letra: rgb(0, 0, 0);
+    --tema: bisque;
+    --nav: burlywood;
+}
+
+.dark{
+    --letra: rgb(255, 255, 255);
+    --tema: rgb(0, 0, 0);
+    --nav: rgb(175, 129, 69);
+}
+
+body{
+    background-color: var(--tema);
+    color: var(--letra);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--nav);
+}
+
+nav img{
+    display: none;
+    cursor: pointer;
+}
+
+nav button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+nav div{
+    cursor: pointer;
+}
+
+.config{
+    display: none;
+    text-align: center;
+    height: 90%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding: 70px;
+    background-color: cornflowerblue;
+}
+
+.config p{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+main{
+    display: block;
+}
+
+section{
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 80px;
+    background: whitesmoke;
+    color: black;
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 37%;
+}
+
+.texto-nota{
+    padding: 10px;
+}
+
+.salvar{
+    padding: 11px;
+    font-size: large;
+    border-radius: 8px;
+    background-color: rgb(47, 255, 64);
+    border: none;
+    cursor: pointer;
+}
+
+.salvar:hover{
+    background-color: rgb(0, 170, 0);
+}
+
+.notas-salvas{
+    gap: 10px;
+    font-size: large;
+}
+
+.novaNota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.x{
+    background-color: red;
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.x:hover{
+    background-color: rgb(196, 0, 0);
+}
+
+footer {
+    text-align: center;
+    background-color: gray;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 970px){
+    nav img{
+        display: flex;
+        width: 8%;
+    }
+    nav div{
+        cursor: pointer;
+        display: none;
+    }
+    section{
+        width: 30%;
+        height: 100%;
+        padding: 30px;
+    }
+    .texto-nota{
+        padding: 7px;
+    }
+    .config{
+        text-align: center;
+        height: 90%;
+        right: 0;
+        top: 0;
+        position: absolute;
+        padding: 70px;
+        background-color: cornflowerblue;
+    }
+    
+    .config p{
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .config p:hover{
+        color: thistle;
+    }
+    .fechar{
+        cursor: pointer;
+        background-color: transparent;
+        padding: 7px;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: large;
+        color: var(--letra);
+    }
+    .fechar:hover{
+        color: red;
+    }
+}
