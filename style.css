@@ -145,6 +145,7 @@ footer {
     }
     .texto-nota{
         padding: 7px;
+        width: 40%;
     }
     .config{
         text-align: center;
